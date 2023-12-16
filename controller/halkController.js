@@ -21,3 +21,17 @@ exports.postOneri=async(req,res)=>{
     const oner=await halkOneri.create({oneri})
     res.status(200).json(oner)
 }
+
+exports.getOneri=async(req,res)=>{
+    const oneriler = await halkOneri.find({});
+    res.status(200).json(oneriler);
+}
+exports.getIstek=async(req,res)=>{
+    const istekler = await halkIstek.find({});
+    res.status(200).json(istekler);
+}
+
+exports.getSikayet=async(req,res)=>{
+    const sikayetler = await halkSikayet.find({});
+    res.status(200).json(sikayetler);
+}
