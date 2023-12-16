@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const halkSchema = new mongoose.Schema(
+const belediyeOneriSchema = new mongoose.Schema(
     {
         oneri:{
             type:String,
@@ -43,4 +43,4 @@ const halkSchema = new mongoose.Schema(
     }
 )
 
-module.exports = mongoose.model('Halk',halkSchema)
+module.exports = mongoose.model('BelediyeOneri',belediyeOneriSchema)
