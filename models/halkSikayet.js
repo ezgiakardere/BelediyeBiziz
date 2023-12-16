@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const halkSchema = new mongoose.Schema(
+const halkSikayetSchema = new mongoose.Schema(
     {
 
         sikayet:{
@@ -14,4 +14,4 @@ const halkSchema = new mongoose.Schema(
 );
 
 
-module.exports = mongoose.model('Halk', halkSchema);
+module.exports = mongoose.model('HalkSikayet', halkSikayetSchema);

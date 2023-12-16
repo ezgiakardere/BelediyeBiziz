@@ -2,11 +2,17 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+const connectDb=require('./config/dbConnection')
+connectDb()
 
 
-app.use("/",()=>{
-    console.log("Deneme");
-})
+
+const halkRoute=require('./routers/halkRoutes')
+
+
+app.use(express.json())
+
+app.use("/halk",halkRoute)
 
 
 

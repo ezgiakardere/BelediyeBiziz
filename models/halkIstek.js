@@ -13,4 +13,4 @@ const halkSchema = new mongoose.Schema(
 );
 
 
-module.exports = mongoose.model('Halk', halkSchema);
+module.exports = mongoose.model('HalkIstek', halkSchema);

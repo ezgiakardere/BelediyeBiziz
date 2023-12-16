@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const halkSchema = new mongoose.Schema(
+const halkOneriSchema = new mongoose.Schema(
     {
         oneri:{
             type:String,
-            required:false        
+            required:true        
         }
     },
     {
@@ -13,4 +13,4 @@ const halkSchema = new mongoose.Schema(
 );
 
 
-module.exports = mongoose.model('Halk', halkSchema);
+module.exports = mongoose.model('HalkOneri', halkOneriSchema);
